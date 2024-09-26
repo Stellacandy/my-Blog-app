@@ -1,8 +1,13 @@
 import React from "react";
 
+import {NavLink, useLocation} from "react-router-dom";
+
 
 
 const Header = function() {
+
+const location = useLocation();
+console.log(location.pathname)
 
 
 return (
@@ -11,9 +16,9 @@ return (
             <h4  className="header-text"> Starter </h4>
 
             <div  className="links">
-            <a href="#">About</a> 
-            <a href="#">Blog</a> 
-            <a href="#">Tags</a> 
+            <NavLink to="/About" style={ location.pathname === '/about' ?  {textDecoration: "underline",} : {} }>About</NavLink> 
+            <NavLink to="/Blog" style={ location.pathname === '/blog' ?  {textDecoration: "underline",} : {} }>Blog</NavLink>
+            <NavLink to="/Tag" style={ location.pathname === '/tag' ?  {textDecoration: "underline",} : {} }>Tag</NavLink>
 
             </div>
 

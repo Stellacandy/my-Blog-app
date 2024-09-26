@@ -41,8 +41,14 @@ function ContentGrid () {
            <ContentCard
                date= "2nd Feb,2024 . #minimalist"
                text= "Warning Wisely: Sustainable Travel Tips For the Minimalist Explorer."
-               cardimg={desert}
+               cardimg={canoe}
           />
+
+
+            <span className="card-btnbox">
+            <a href="#" classname="card-btn" > View More </a>
+            </span>
+
         </div>
 
 

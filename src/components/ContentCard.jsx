@@ -6,11 +6,14 @@ function ContentCard(props) {
 
      return (
         <div className="card">
-            <h6 className="card-date"> {props.date}</h6>
+
+  <span className="card-details">        <h6 className="card-date"> {props.date}</h6>
             <p className="card-text"> {props.text}   </p>
+
+            </span>  
     
-          <div className="card-img">
-          <img src={props.cardimg} alt="card article image" />
+          <div className="cardimg-box">
+          <img  className="card-img"   src={props.cardimg} alt="card article image" />
             </div>  
 
         </div>
